@@ -1,0 +1,8 @@
+Test_Cases\TC05_UpdateBooking.class
+Test_Cases\TC07_DeleteBooking.class
+Test_Cases\TC06_PartialUpdate.class
+Test_Cases\TC01_CreateToken.class
+Test_Cases\TC02_GetBookingIDs.class
+Test_Cases\TC03_GetBooking.class
+Test_Cases\TC04_CreateBooking.class
+Pojo\partialUpdate.class

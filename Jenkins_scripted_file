@@ -5,15 +5,14 @@ node
   bat "mvn clean"
   }
 
+  stage('compile')
+  {
+  bat "mvn compile"
+  }
+
   stage('Test')
   {
   bat "mvn test"
   }    
 
- post{
-    success{
-      bat "echo success"
-    }
-    
-}
 }

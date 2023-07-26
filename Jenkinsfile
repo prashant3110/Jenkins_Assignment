@@ -1,14 +1,32 @@
-node
-  {
+pipeline{
+  agent any
+    tools{
+      maven 'mvn_home'
+    }
+  
+  stages{
+    
     stage("build")
-    {
-        bat "mvn clean --file *.pom"
+    {  
+    steps{
+        bat "mvn clean"
+        }
     }
 
     stage("test")
     {
-      bat "mvn test"
+     steps{
+        bat "mvn test"
+        }
     }
 
   }
+
+  post{
+    sucess{
+      bat "echo success"
+    }
     
+}
+}
+  

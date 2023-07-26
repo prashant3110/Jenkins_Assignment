@@ -1,0 +1,13 @@
+node
+{
+  stage('build')
+  {
+  bat "mvn clean"
+  }
+
+  stage('Test')
+  {
+  bat "mvn test"
+  }    
+
+}

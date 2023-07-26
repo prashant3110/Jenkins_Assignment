@@ -2,7 +2,7 @@ node
   {
     stage("build")
     {
-        bat "mvn clean"
+        bat "mvn clean --file *.pom"
     }
 
     stage("test")

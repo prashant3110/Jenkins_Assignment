@@ -1,9 +1,5 @@
 pipeline{
   agent any
-    tools{
-      maven 'MVN_HOME'
-    }
-  
   stages{
     
     stage("build")

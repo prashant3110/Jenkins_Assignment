@@ -10,9 +10,10 @@ node
   bat "mvn test"
   }    
 
-  post{
+ post{
     success{
-        bat "echo Success"
-          }
-      }
+      bat "echo success"
+    }
+    
+}
 }

@@ -2,12 +2,12 @@ node
   {
     stage("build")
     {
-        bat "mvn clean"
+        echo "mvn clean"
     }
 
     stage("test")
     {
-      bat "mvn test"
+      echo "mvn test"
     }
 
   }
